@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="I47-kC-VpX" customClass="ProfileSkillView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ch-Y2-SYm" userLabel="Container">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm a designer, I do..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVH-I4-h8p" userLabel="Title">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="6W1-NS-x6k"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0mM-nu-gz0">
+                            <rect key="frame" x="10" y="80" width="580" height="90"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="0mM-nu-gz0" firstAttribute="top" secondItem="dVH-I4-h8p" secondAttribute="bottom" constant="30" id="1cD-rI-Mdz"/>
+                        <constraint firstAttribute="bottom" secondItem="0mM-nu-gz0" secondAttribute="bottom" constant="30" id="60N-kN-GU4"/>
+                        <constraint firstItem="dVH-I4-h8p" firstAttribute="top" secondItem="5ch-Y2-SYm" secondAttribute="top" id="9lM-2W-PTp"/>
+                        <constraint firstItem="0mM-nu-gz0" firstAttribute="leading" secondItem="dVH-I4-h8p" secondAttribute="leading" constant="10" id="BUJ-G5-G9J"/>
+                        <constraint firstItem="dVH-I4-h8p" firstAttribute="trailing" secondItem="0mM-nu-gz0" secondAttribute="trailing" constant="10" id="Joh-UP-oAz"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dVH-I4-h8p" secondAttribute="bottom" constant="30" id="a9E-nM-jmD"/>
+                        <constraint firstItem="dVH-I4-h8p" firstAttribute="leading" secondItem="5ch-Y2-SYm" secondAttribute="leading" id="mdP-yh-Kfa"/>
+                        <constraint firstAttribute="trailing" secondItem="dVH-I4-h8p" secondAttribute="trailing" id="zbx-lk-tvd"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample_cover" translatesAutoresizingMaskIntoConstraints="NO" id="ehK-o3-rPC" userLabel="Cover Image">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ehK-o3-rPC" firstAttribute="leading" secondItem="I47-kC-VpX" secondAttribute="leading" id="JEg-UL-akC"/>
+                <constraint firstAttribute="bottom" secondItem="5ch-Y2-SYm" secondAttribute="bottom" id="OdS-RD-lcv"/>
+                <constraint firstItem="5ch-Y2-SYm" firstAttribute="leading" secondItem="I47-kC-VpX" secondAttribute="leading" id="Pwv-Ao-9Na"/>
+                <constraint firstItem="ehK-o3-rPC" firstAttribute="top" secondItem="I47-kC-VpX" secondAttribute="top" id="ZXV-ie-VqV"/>
+                <constraint firstItem="5ch-Y2-SYm" firstAttribute="top" secondItem="I47-kC-VpX" secondAttribute="top" id="dip-sl-KM3"/>
+                <constraint firstAttribute="bottom" secondItem="ehK-o3-rPC" secondAttribute="bottom" id="g6i-Az-FRy"/>
+                <constraint firstAttribute="trailing" secondItem="ehK-o3-rPC" secondAttribute="trailing" id="v22-7n-Rsu"/>
+                <constraint firstAttribute="trailing" secondItem="5ch-Y2-SYm" secondAttribute="trailing" id="yFa-Kg-1Vt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblTitle" destination="dVH-I4-h8p" id="epC-5d-vcC"/>
+                <outlet property="viewContainer" destination="5ch-Y2-SYm" id="xWM-rD-NgB"/>
+                <outlet property="viewSkillHolder" destination="0mM-nu-gz0" id="UbO-23-bpA"/>
+            </connections>
+            <point key="canvasLocation" x="431" y="340"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sample_cover" width="1333" height="1732"/>
+    </resources>
+</document>

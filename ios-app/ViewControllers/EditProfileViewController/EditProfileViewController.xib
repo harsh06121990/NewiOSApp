@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditProfileViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewTabBarHolder" destination="wGc-2o-2Py" id="tew-sB-91G"/>
+                <outlet property="viewTransLayer" destination="FD6-dc-lfc" id="enA-O8-gRF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbe-pv-pa0" userLabel="Container">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGc-2o-2Py" userLabel="Tab Bar Holder">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                            <color key="backgroundColor" red="0.12549019607843137" green="0.23137254901960785" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="4Jd-Xb-L9H"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample_cover" translatesAutoresizingMaskIntoConstraints="NO" id="thY-Oe-1er">
+                            <rect key="frame" x="0.0" y="100" width="600" height="500"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FD6-dc-lfc" userLabel="Trans layer">
+                            <rect key="frame" x="0.0" y="100" width="600" height="500"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="wGc-2o-2Py" secondAttribute="trailing" id="0Mx-SQ-3jH"/>
+                        <constraint firstAttribute="bottom" secondItem="FD6-dc-lfc" secondAttribute="bottom" id="1Yo-44-Cgj"/>
+                        <constraint firstItem="wGc-2o-2Py" firstAttribute="leading" secondItem="thY-Oe-1er" secondAttribute="leading" id="99k-Tt-aaC"/>
+                        <constraint firstItem="FD6-dc-lfc" firstAttribute="top" secondItem="wGc-2o-2Py" secondAttribute="bottom" id="DEV-0L-DFc"/>
+                        <constraint firstItem="wGc-2o-2Py" firstAttribute="leading" secondItem="FD6-dc-lfc" secondAttribute="leading" id="Ndv-Eq-RTk"/>
+                        <constraint firstItem="wGc-2o-2Py" firstAttribute="trailing" secondItem="thY-Oe-1er" secondAttribute="trailing" id="Zaj-Nc-NAh"/>
+                        <constraint firstItem="wGc-2o-2Py" firstAttribute="trailing" secondItem="FD6-dc-lfc" secondAttribute="trailing" id="bke-hR-dDv"/>
+                        <constraint firstAttribute="bottom" secondItem="thY-Oe-1er" secondAttribute="bottom" id="nLl-5x-tMK"/>
+                        <constraint firstItem="wGc-2o-2Py" firstAttribute="top" secondItem="bbe-pv-pa0" secondAttribute="top" id="qHN-Ua-Y0R"/>
+                        <constraint firstItem="wGc-2o-2Py" firstAttribute="leading" secondItem="bbe-pv-pa0" secondAttribute="leading" id="w2I-ps-jte"/>
+                        <constraint firstItem="thY-Oe-1er" firstAttribute="top" secondItem="wGc-2o-2Py" secondAttribute="bottom" id="xTa-a0-oDf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bbe-pv-pa0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UyX-AE-Uc5"/>
+                <constraint firstItem="bbe-pv-pa0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fdP-Ba-RW2"/>
+                <constraint firstAttribute="trailing" secondItem="bbe-pv-pa0" secondAttribute="trailing" id="riV-DE-6tF"/>
+                <constraint firstAttribute="bottom" secondItem="bbe-pv-pa0" secondAttribute="bottom" id="sbf-tq-Pan"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="sample_cover" width="1333" height="1732"/>
+    </resources>
+</document>

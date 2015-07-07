@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="fromChatTableCell" id="uvY-4E-4aD" customClass="FromChatTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="105"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="uvY-4E-4aD" id="yfn-mn-D3F">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qsp-Gn-FBh" userLabel="Container View">
+                        <rect key="frame" x="0.0" y="0.0" width="397" height="104"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EnL-Tl-vfd">
+                                <rect key="frame" x="10" y="5" width="265" height="96"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6t-jv-DFH">
+                                        <rect key="frame" x="5" y="5" width="255" height="86"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.26666666666666666" green="0.65098039215686276" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="g6t-jv-DFH" secondAttribute="trailing" constant="5" id="5tA-LM-ndh"/>
+                                    <constraint firstAttribute="bottom" secondItem="g6t-jv-DFH" secondAttribute="bottom" constant="5" id="6Cz-v1-22N"/>
+                                    <constraint firstItem="g6t-jv-DFH" firstAttribute="top" secondItem="EnL-Tl-vfd" secondAttribute="top" constant="5" id="AqT-wx-2Tx"/>
+                                    <constraint firstItem="g6t-jv-DFH" firstAttribute="leading" secondItem="EnL-Tl-vfd" secondAttribute="leading" constant="5" id="DFI-fN-izr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26397985452064421" green="0.27984093569918367" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EnL-Tl-vfd" firstAttribute="leading" secondItem="qsp-Gn-FBh" secondAttribute="leading" constant="10" id="8te-vp-elx"/>
+                            <constraint firstAttribute="bottom" secondItem="EnL-Tl-vfd" secondAttribute="bottom" constant="3" id="I6L-VR-UhL"/>
+                            <constraint firstItem="EnL-Tl-vfd" firstAttribute="top" secondItem="qsp-Gn-FBh" secondAttribute="top" constant="5" id="QyO-Yl-HGy"/>
+                            <constraint firstItem="EnL-Tl-vfd" firstAttribute="width" secondItem="qsp-Gn-FBh" secondAttribute="width" multiplier="6:9" id="av3-Fg-TYN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.99667609743515928" green="0.97879829460627166" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="qsp-Gn-FBh" secondAttribute="bottom" id="Fnn-eX-b3T"/>
+                    <constraint firstItem="qsp-Gn-FBh" firstAttribute="leading" secondItem="yfn-mn-D3F" secondAttribute="leading" id="eIN-TA-lcy"/>
+                    <constraint firstItem="qsp-Gn-FBh" firstAttribute="top" secondItem="yfn-mn-D3F" secondAttribute="top" id="iI3-3l-aPD"/>
+                    <constraint firstAttribute="trailing" secondItem="qsp-Gn-FBh" secondAttribute="trailing" id="pKt-s6-YkF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="messageText" destination="g6t-jv-DFH" id="bnI-TK-I6T"/>
+                <outlet property="textBackground" destination="EnL-Tl-vfd" id="WQs-Ld-CMn"/>
+            </connections>
+            <point key="canvasLocation" x="255" y="170"/>
+        </tableViewCell>
+    </objects>
+</document>

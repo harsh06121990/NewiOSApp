@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6254"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileViewController">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9VD-gm-USa" userLabel="Container">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RCx-jB-6e6" userLabel="Intro Tab">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                            <color key="backgroundColor" red="0.21960784310000001" green="0.69803921570000005" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVF-Yd-oK9" userLabel="Content Holder">
+                            <rect key="frame" x="0.0" y="200" width="600" height="400"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="RCx-jB-6e6" firstAttribute="leading" secondItem="hVF-Yd-oK9" secondAttribute="leading" id="EIL-Pj-ROB"/>
+                        <constraint firstAttribute="bottom" secondItem="hVF-Yd-oK9" secondAttribute="bottom" id="JSx-wV-gYu"/>
+                        <constraint firstItem="RCx-jB-6e6" firstAttribute="leading" secondItem="9VD-gm-USa" secondAttribute="leading" id="Moz-43-9Mn"/>
+                        <constraint firstItem="hVF-Yd-oK9" firstAttribute="top" secondItem="RCx-jB-6e6" secondAttribute="bottom" id="PgQ-Wu-Eke"/>
+                        <constraint firstItem="RCx-jB-6e6" firstAttribute="top" secondItem="9VD-gm-USa" secondAttribute="top" id="Sfc-GJ-9cs"/>
+                        <constraint firstItem="RCx-jB-6e6" firstAttribute="height" secondItem="9VD-gm-USa" secondAttribute="height" multiplier="1:3" id="VvQ-b7-LwB"/>
+                        <constraint firstItem="RCx-jB-6e6" firstAttribute="trailing" secondItem="hVF-Yd-oK9" secondAttribute="trailing" id="Xkt-do-ivh"/>
+                        <constraint firstAttribute="trailing" secondItem="RCx-jB-6e6" secondAttribute="trailing" id="xP8-GJ-CWe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="9VD-gm-USa" secondAttribute="bottom" id="3vA-da-tj3"/>
+                <constraint firstItem="9VD-gm-USa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9Fi-QA-kpO"/>
+                <constraint firstItem="9VD-gm-USa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dr0-Ic-5Uo"/>
+                <constraint firstAttribute="trailing" secondItem="9VD-gm-USa" secondAttribute="trailing" id="hQ0-pB-1kJ"/>
+            </constraints>
+            <connections>
+                <outlet property="viewActionBarHolder" destination="RCx-jB-6e6" id="tk1-xv-9dP"/>
+                <outlet property="viewContentHolder" destination="hVF-Yd-oK9" id="J0N-SY-j5G"/>
+            </connections>
+        </view>
+    </objects>
+</document>

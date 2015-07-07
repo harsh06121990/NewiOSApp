@@ -1,0 +1,1 @@
+PODS_IOS_APPTESTS_YLMOMENT_OTHER_LDFLAGS = -framework "Foundation"

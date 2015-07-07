@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mwA-gi-RMp" customClass="EditProfileTabBar">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dv6-3z-fmd" userLabel="Container">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIH-RR-su3">
+                            <rect key="frame" x="0.0" y="0.0" width="106.5" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="Education">
+                                <color key="titleColor" red="0.50588235294117645" green="0.55294117647058827" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="edu:" destination="mwA-gi-RMp" eventType="touchUpInside" id="79o-Z7-GT9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEv-hR-g1W">
+                            <rect key="frame" x="106.5" y="0.0" width="106.5" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="Skills">
+                                <color key="titleColor" red="0.50588235290000005" green="0.55294117649999996" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="skill:" destination="mwA-gi-RMp" eventType="touchUpInside" id="aSw-ka-Jue"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBS-SH-R1l">
+                            <rect key="frame" x="213" y="0.0" width="106.5" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="Introduction">
+                                <color key="titleColor" red="0.50588235290000005" green="0.55294117649999996" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="intro:" destination="mwA-gi-RMp" eventType="touchUpInside" id="pV3-fv-rcR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1o-Xi-Hyc">
+                            <rect key="frame" x="0.0" y="50" width="106.5" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="Location">
+                                <color key="titleColor" red="0.50588235290000005" green="0.55294117649999996" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="location:" destination="mwA-gi-RMp" eventType="touchUpInside" id="yHP-AS-6N5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1p-bp-Kr3">
+                            <rect key="frame" x="106.5" y="50" width="106.5" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="Work Experience">
+                                <color key="titleColor" red="0.50588235290000005" green="0.55294117649999996" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="experience:" destination="mwA-gi-RMp" eventType="touchUpInside" id="7zS-Xg-75O"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRn-uS-4sS">
+                            <rect key="frame" x="213" y="50" width="106.5" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="External Links">
+                                <color key="titleColor" red="0.50588235290000005" green="0.55294117649999996" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="externalLink:" destination="mwA-gi-RMp" eventType="touchUpInside" id="F3X-mh-fCr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.13333333333333333" green="0.2627450980392157" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="A1o-Xi-Hyc" firstAttribute="trailing" secondItem="WIH-RR-su3" secondAttribute="trailing" id="4OZ-Di-h4O"/>
+                        <constraint firstItem="kEv-hR-g1W" firstAttribute="width" secondItem="y1p-bp-Kr3" secondAttribute="width" id="9Iz-GW-aGM"/>
+                        <constraint firstItem="cBS-SH-R1l" firstAttribute="leading" secondItem="kEv-hR-g1W" secondAttribute="trailing" id="C2c-C2-UkW"/>
+                        <constraint firstItem="kEv-hR-g1W" firstAttribute="leading" secondItem="WIH-RR-su3" secondAttribute="trailing" id="HnN-eX-CLr"/>
+                        <constraint firstItem="cBS-SH-R1l" firstAttribute="width" secondItem="MRn-uS-4sS" secondAttribute="width" id="OGu-Kt-Qtc"/>
+                        <constraint firstItem="WIH-RR-su3" firstAttribute="height" secondItem="dv6-3z-fmd" secondAttribute="height" multiplier="1:2" id="Osq-He-j79"/>
+                        <constraint firstItem="WIH-RR-su3" firstAttribute="height" secondItem="kEv-hR-g1W" secondAttribute="height" id="Q3p-SZ-3sK"/>
+                        <constraint firstItem="y1p-bp-Kr3" firstAttribute="top" secondItem="kEv-hR-g1W" secondAttribute="bottom" id="QMi-3F-7Io"/>
+                        <constraint firstItem="cBS-SH-R1l" firstAttribute="height" secondItem="kEv-hR-g1W" secondAttribute="height" id="QQL-K8-WQI"/>
+                        <constraint firstItem="kEv-hR-g1W" firstAttribute="height" secondItem="y1p-bp-Kr3" secondAttribute="height" id="RUA-SK-BZB"/>
+                        <constraint firstItem="MRn-uS-4sS" firstAttribute="top" secondItem="cBS-SH-R1l" secondAttribute="bottom" id="Tcg-4j-USr"/>
+                        <constraint firstItem="cBS-SH-R1l" firstAttribute="height" secondItem="MRn-uS-4sS" secondAttribute="height" id="YF9-Nd-rH0"/>
+                        <constraint firstItem="cBS-SH-R1l" firstAttribute="top" secondItem="kEv-hR-g1W" secondAttribute="top" id="aUE-h5-Ain"/>
+                        <constraint firstItem="cBS-SH-R1l" firstAttribute="trailing" secondItem="MRn-uS-4sS" secondAttribute="trailing" id="cHJ-MI-6xY"/>
+                        <constraint firstItem="A1o-Xi-Hyc" firstAttribute="height" secondItem="WIH-RR-su3" secondAttribute="height" id="cyf-av-Q3W"/>
+                        <constraint firstItem="WIH-RR-su3" firstAttribute="top" secondItem="dv6-3z-fmd" secondAttribute="top" id="fic-lY-kNo"/>
+                        <constraint firstItem="WIH-RR-su3" firstAttribute="width" secondItem="kEv-hR-g1W" secondAttribute="width" id="gqp-nW-lkx"/>
+                        <constraint firstItem="WIH-RR-su3" firstAttribute="width" secondItem="dv6-3z-fmd" secondAttribute="width" multiplier="1:3" id="hzZ-Rb-sc1"/>
+                        <constraint firstItem="WIH-RR-su3" firstAttribute="bottom" secondItem="kEv-hR-g1W" secondAttribute="bottom" id="kdV-VQ-V85"/>
+                        <constraint firstItem="kEv-hR-g1W" firstAttribute="leading" secondItem="y1p-bp-Kr3" secondAttribute="leading" id="kwo-Dd-qdF"/>
+                        <constraint firstItem="WIH-RR-su3" firstAttribute="top" secondItem="kEv-hR-g1W" secondAttribute="top" id="ldk-t5-E1p"/>
+                        <constraint firstItem="kEv-hR-g1W" firstAttribute="trailing" secondItem="y1p-bp-Kr3" secondAttribute="trailing" id="m2n-sf-MgY"/>
+                        <constraint firstItem="A1o-Xi-Hyc" firstAttribute="top" secondItem="WIH-RR-su3" secondAttribute="bottom" id="mrE-8u-bzN"/>
+                        <constraint firstItem="cBS-SH-R1l" firstAttribute="leading" secondItem="MRn-uS-4sS" secondAttribute="leading" id="nfK-VI-GcX"/>
+                        <constraint firstItem="A1o-Xi-Hyc" firstAttribute="leading" secondItem="WIH-RR-su3" secondAttribute="leading" id="pbx-fd-TTa"/>
+                        <constraint firstItem="A1o-Xi-Hyc" firstAttribute="width" secondItem="WIH-RR-su3" secondAttribute="width" id="pjE-5L-7bH"/>
+                        <constraint firstItem="cBS-SH-R1l" firstAttribute="width" secondItem="kEv-hR-g1W" secondAttribute="width" id="s0m-l8-vfD"/>
+                        <constraint firstItem="WIH-RR-su3" firstAttribute="leading" secondItem="dv6-3z-fmd" secondAttribute="leading" id="w23-bt-Yr1"/>
+                        <constraint firstItem="cBS-SH-R1l" firstAttribute="bottom" secondItem="kEv-hR-g1W" secondAttribute="bottom" id="yw0-SY-CaF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dv6-3z-fmd" secondAttribute="bottom" id="OI2-On-p0M"/>
+                <constraint firstAttribute="trailing" secondItem="dv6-3z-fmd" secondAttribute="trailing" id="PRj-tf-csr"/>
+                <constraint firstItem="dv6-3z-fmd" firstAttribute="top" secondItem="mwA-gi-RMp" secondAttribute="top" id="ZPr-cq-JY2"/>
+                <constraint firstItem="dv6-3z-fmd" firstAttribute="leading" secondItem="mwA-gi-RMp" secondAttribute="leading" id="jrz-VW-YpM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnEdu" destination="WIH-RR-su3" id="1JS-W8-m2W"/>
+                <outlet property="btnExp" destination="y1p-bp-Kr3" id="14t-9C-dV0"/>
+                <outlet property="btnIntro" destination="cBS-SH-R1l" id="Uzi-jO-yn4"/>
+                <outlet property="btnLink" destination="MRn-uS-4sS" id="SuE-da-sv4"/>
+                <outlet property="btnLocation" destination="A1o-Xi-Hyc" id="H1f-Ko-r5D"/>
+                <outlet property="btnSkill" destination="kEv-hR-g1W" id="q02-gs-0Qq"/>
+            </connections>
+            <point key="canvasLocation" x="473" y="359"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AdvertTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="640" height="240"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S63-SJ-Mhr">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="235"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6U-LS-qeM">
+                                <rect key="frame" x="0.0" y="0.0" width="640" height="235"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample_google" translatesAutoresizingMaskIntoConstraints="NO" id="xXE-qX-E3g">
+                                        <rect key="frame" x="0.0" y="0.0" width="640" height="235"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" misplaced="YES" text="Google Hiring Back End Developers Downtown Vancouver" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMa-KS-BER">
+                                        <rect key="frame" x="32" y="0.0" width="577" height="157"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cmp-Eq-vdV">
+                                        <rect key="frame" x="0.0" y="185" width="640" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbr-Nk-MAC">
+                                                <rect key="frame" x="10" y="10" width="29" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="wbr-Nk-MAC" secondAttribute="height" multiplier="1:1" id="xBH-9Y-dZS"/>
+                                                </constraints>
+                                                <state key="normal" image="star_gray">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zow-zU-GPm">
+                                                <rect key="frame" x="49" y="8" width="35" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="zow-zU-GPm" secondAttribute="height" multiplier="1:1" id="UJQ-Sv-78l"/>
+                                                </constraints>
+                                                <state key="normal" image="share_gray">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google Inc." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J75-7p-Gaf">
+                                                <rect key="frame" x="533" y="17" width="77" height="17"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="zow-zU-GPm" firstAttribute="leading" secondItem="wbr-Nk-MAC" secondAttribute="trailing" constant="10" id="2PV-ab-aV6"/>
+                                            <constraint firstAttribute="trailing" secondItem="J75-7p-Gaf" secondAttribute="trailing" multiplier="1.05" id="BY4-iT-e2O"/>
+                                            <constraint firstItem="wbr-Nk-MAC" firstAttribute="leading" secondItem="Cmp-Eq-vdV" secondAttribute="leading" constant="10" id="EwQ-BB-Uol"/>
+                                            <constraint firstAttribute="width" secondItem="Cmp-Eq-vdV" secondAttribute="height" multiplier="64:5" id="Jmd-8c-hZ5"/>
+                                            <constraint firstAttribute="centerY" secondItem="zow-zU-GPm" secondAttribute="centerY" id="Reu-5p-j4l"/>
+                                            <constraint firstAttribute="centerY" secondItem="wbr-Nk-MAC" secondAttribute="centerY" id="Rjy-wq-tnT"/>
+                                            <constraint firstAttribute="height" secondItem="wbr-Nk-MAC" secondAttribute="height" multiplier="1.7" id="Vji-2S-2Ap"/>
+                                            <constraint firstAttribute="centerY" secondItem="J75-7p-Gaf" secondAttribute="centerY" constant="-0.5" id="piH-6t-6Yq"/>
+                                            <constraint firstItem="zow-zU-GPm" firstAttribute="height" secondItem="Cmp-Eq-vdV" secondAttribute="height" multiplier="0.7" id="uam-Og-C1f"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Cmp-Eq-vdV" secondAttribute="bottom" id="6LS-c1-UMI"/>
+                                    <constraint firstItem="xXE-qX-E3g" firstAttribute="leading" secondItem="g6U-LS-qeM" secondAttribute="leading" id="7XZ-cj-gUC"/>
+                                    <constraint firstAttribute="width" secondItem="Cmp-Eq-vdV" secondAttribute="width" id="C2C-sR-geH"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cmp-Eq-vdV" secondAttribute="trailing" id="IoX-4v-4ES"/>
+                                    <constraint firstItem="Cmp-Eq-vdV" firstAttribute="leading" secondItem="g6U-LS-qeM" secondAttribute="leading" id="NX2-m4-HKk"/>
+                                    <constraint firstItem="xXE-qX-E3g" firstAttribute="top" secondItem="g6U-LS-qeM" secondAttribute="top" id="OK0-KV-dlV"/>
+                                    <constraint firstAttribute="trailing" secondItem="xXE-qX-E3g" secondAttribute="trailing" id="VgR-Rx-QwP"/>
+                                    <constraint firstAttribute="centerY" secondItem="bMa-KS-BER" secondAttribute="centerY" multiplier="1.5" id="YMJ-BH-9bF"/>
+                                    <constraint firstItem="bMa-KS-BER" firstAttribute="top" secondItem="g6U-LS-qeM" secondAttribute="top" id="Zkb-fg-5RN"/>
+                                    <constraint firstItem="bMa-KS-BER" firstAttribute="width" secondItem="g6U-LS-qeM" secondAttribute="width" multiplier="9/10" id="aZ7-7i-t3V"/>
+                                    <constraint firstAttribute="bottom" secondItem="xXE-qX-E3g" secondAttribute="bottom" id="wAj-e6-2ZC"/>
+                                    <constraint firstAttribute="centerX" secondItem="bMa-KS-BER" secondAttribute="centerX" id="yHM-IS-wfu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="g6U-LS-qeM" secondAttribute="bottom" id="9aJ-lt-ubt"/>
+                            <constraint firstItem="g6U-LS-qeM" firstAttribute="leading" secondItem="S63-SJ-Mhr" secondAttribute="leading" id="EAn-54-93H"/>
+                            <constraint firstAttribute="trailing" secondItem="g6U-LS-qeM" secondAttribute="trailing" id="NPL-qP-vbi"/>
+                            <constraint firstItem="g6U-LS-qeM" firstAttribute="top" secondItem="S63-SJ-Mhr" secondAttribute="top" id="dTQ-WP-dcw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.90775977760000004" green="0.90775977760000004" blue="0.90775977760000004" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="S63-SJ-Mhr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="74l-sG-uyq"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="S63-SJ-Mhr" secondAttribute="bottom" constant="-4" id="NXk-Eq-adM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="S63-SJ-Mhr" secondAttribute="trailing" constant="-8" id="Nfm-fB-OSJ"/>
+                    <constraint firstItem="S63-SJ-Mhr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="xfn-1e-ZaQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgEventImage" destination="xXE-qX-E3g" id="c5c-1n-ztU"/>
+                <outlet property="lblCompanyName" destination="J75-7p-Gaf" id="86p-9J-ZIl"/>
+                <outlet property="lblEventTitle" destination="bMa-KS-BER" id="N7L-Fb-DEM"/>
+                <outlet property="viewContentHolder" destination="S63-SJ-Mhr" id="6Lb-w3-iaE"/>
+            </connections>
+            <point key="canvasLocation" x="373" y="226"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sample_google" width="479" height="451"/>
+        <image name="share_gray" width="60" height="60"/>
+        <image name="star_gray" width="60" height="60"/>
+    </resources>
+</document>
